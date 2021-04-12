@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+#Webpacker makes it easy to use the JavaScript pre-processor and bundler webpack 5.x.x+ to manage application-like JavaScript in Rails
+gem 'webpacker'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
