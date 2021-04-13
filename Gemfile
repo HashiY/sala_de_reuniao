@@ -27,7 +27,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 #Webpacker makes it easy to use the JavaScript pre-processor and bundler webpack 5.x.x+ to manage application-like JavaScript in Rails
 gem 'webpacker'
-
+# Flexible authentication solution for Rails with Warden
+gem 'devise'
+# Translations for the devise gems
+gem 'devise-i18n'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
