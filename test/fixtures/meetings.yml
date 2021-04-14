@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_date: 2021-04-14 20:58:42
+  end_date: 2021-04-14 20:58:42
+  description: MyText
+  rec_type: MyString
+  event_length: 1
+  event_pid: 1
+  user: one
+
+two:
+  start_date: 2021-04-14 20:58:42
+  end_date: 2021-04-14 20:58:42
+  description: MyText
+  rec_type: MyString
+  event_length: 1
+  event_pid: 1
+  user: two
