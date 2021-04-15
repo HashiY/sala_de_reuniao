@@ -13,6 +13,6 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 
-Rails.application.config.assets.precompile += %w( dhtmlxscheduler.css )
-
-Rails.application.config.assets.precompile += %w( dhtmlxscheduler.js )
+Rails.application.config.assets.precompile += %w( dhtmlxscheduler.js
+    ext/dhtmlxscheduler_recurring.js
+    dhtmlxscheduler.css )
