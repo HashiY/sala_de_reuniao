@@ -1,0 +1,7 @@
+'pt-BR':
+  buttons:
+    button_recurring: Desabilitar
+    button_recurring_open: Habilitar 
+    button_edit_series: Editar a série
+    button_edit_occurrence: Editar uma cópia 
+    

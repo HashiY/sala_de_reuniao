@@ -1,0 +1,45 @@
+'pt-BR':
+  date:
+    month_full:
+      January: Janeiro
+      February: Fevereiro
+      March: Março
+      April: Abril
+      May: Maio
+      June: Junho
+      July: Julho
+      August: Agosto
+      September: Setembro
+      October: Outubro
+      November: Novembro
+      December: Dezembro
+    month_short:
+      Jan: Jan
+      Feb: Fev
+      Mar: Mar
+      Apr: Abr
+      May: Mai
+      Jun: Jun
+      Jul: Jul
+      Aug: Ago
+      Sep: Set
+      Oct: Out
+      Nov: Nov
+      Dec: Dez
+    day_full:
+      Sunday: Domingo
+      Monday: Segunda
+      Tuesday: Terça
+      Wednesday: Quarta
+      Thursday: Quinta
+      Friday: Sexta
+      Saturday: Sábado
+    day_short:
+      Sun: Dom
+      Mon: Seg
+      Tue: Ter
+      Wed: Qua
+      Thu: Qui
+      Fri: Sex
+      Sat: Sab
+
