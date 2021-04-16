@@ -14,3 +14,5 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+import './i18n/pt-BR'
