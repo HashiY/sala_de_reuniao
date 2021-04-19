@@ -24,7 +24,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'rails-i18n'
 #It's a small library to provide the Rails I18n translations on the JavaScript.
 gem 'i18n-js'
-
+# acha erros rails na forma mais legivel
+gem 'better_errors'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -37,7 +38,9 @@ gem 'devise'
 gem 'devise-i18n'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'bootstrap_sb_admin_base_v2'
+# caixa de mensagrns mais bonita
+gem 'rails-assets-bootbox', source: 'https://rails-assets.org'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

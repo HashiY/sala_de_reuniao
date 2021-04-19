@@ -15,4 +15,4 @@
 //= require turbolinks
 //= require_tree .
 
-import './i18n/pt-BR'
+import 'bootstrap/dist/js/bootstrap'

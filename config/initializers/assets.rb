@@ -15,4 +15,6 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( dhtmlxscheduler.js
     ext/dhtmlxscheduler_recurring.js
-    dhtmlxscheduler.css )
+    dhtmlxscheduler.css 
+    login_device.js
+    login_device.css)
