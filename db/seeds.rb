@@ -8,7 +8,7 @@
 
 puts "Cadastrando o USUARIO Padrão..."
 
-Admin.create!(
+User.create!(
   name: "Usuario Geral",
   email: "admin@admin.com",
   password: "123456",

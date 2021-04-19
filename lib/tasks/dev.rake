@@ -5,7 +5,7 @@ namespace :dev do
   
       puts "Executando o setup para desenvolvimento..."
   
-      puts "APAGANDO BD... #{%x(rake db:drop)}"
+      puts "APAGANDO BD... #{%x(rake db:drop:_unsafe)}"
   
       puts "CRIANDO BD... #{%x(rake db:create)}"
       puts %x(rake db:migrate)
