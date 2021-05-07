@@ -10,7 +10,7 @@ class Site::MeetingController < ApplicationController
                :id => meeting.id,
                :start_date => meeting.start_date.to_formatted_s(:db),
                :end_date => meeting.end_date.to_formatted_s(:db),
-               :text => meeting.text
+               :text => meeting.description
            }}
   end
 
@@ -19,11 +19,11 @@ class Site::MeetingController < ApplicationController
     id = params["id"]
     start_date = params["start_date"]
     end_date = params["end_date"]
-    text = params["text"]
+    description = params["text"]
  
     case mode
       when "inserted"
-        meeting = Meeting.create :start_date => start_date, :end_date => end_date, :text => text
+        meeting = Meeting.create :start_date => start_date, :end_date => end_date, :description => description
         tid = meeting.id
  
       when "deleted"
@@ -34,7 +34,7 @@ class Site::MeetingController < ApplicationController
         meeting = Meeting.find(id)
         meeting.start_date = start_date
         meeting.end_date = end_date
-        meeting.text = text
+        meeting.description = description
         meeting.save
         tid = id
     end
