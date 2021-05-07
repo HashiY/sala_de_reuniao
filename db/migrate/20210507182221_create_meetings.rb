@@ -3,8 +3,7 @@ class CreateMeetings < ActiveRecord::Migration[5.2]
     create_table :meetings do |t|
       t.datetime :start_date
       t.datetime :end_date
-      t.text :description
-      t.references :user, index: true, foreign_key: true
+      t.string :text
 
       t.timestamps
     end
