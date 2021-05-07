@@ -4,10 +4,7 @@ class CreateMeetings < ActiveRecord::Migration[5.2]
       t.datetime :start_date
       t.datetime :end_date
       t.text :description
-      t.string :rec_type
-      t.integer :meeting_length
-      t.integer :meeting_pid
-      t.references :user, foreign_key: true
+      t.references :user, index: true, foreign_key: true
 
       t.timestamps
     end

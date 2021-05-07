@@ -15,7 +15,7 @@
 </div>
 
 <script>
-    scheduler.config.xml_date="%d-%m-%Y %H:%i";
+    scheduler.config.xml_date="%Y-%m-%d %H:%i";
     scheduler.init("scheduler_here");
     scheduler.load("<%= data_path %>", "json");
     var dp = new dataProcessor("<%= db_action_path %>");

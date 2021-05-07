@@ -3,10 +3,10 @@ Rails.application.routes.draw do
     get 'meeting/index'
   end
 
-  root 'site/meeting#index'
+  root :to => 'site/meeting#index'
 
   match "meeting/data", :to => "meeting#data", :as => "data", :via => "get"
-  match "meeting/db_action", :to => "meeting#db_action", :as => "db_action", :via => "post"
+  match "meeting/db_action", :to => "meeting#db_action", :as => "db_action", :via => "get"
 
 
   devise_for :users, controllers: {
