@@ -43,6 +43,15 @@ gem 'bootstrap_sb_admin_base_v2'
 gem 'rails-assets-bootbox', source: 'https://rails-assets.org'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# FriendlyId is the "Swiss Army bulldozer" of slugging and permalink plugins for Active Record. It lets you create pretty URLs and work with human-friendly strings as if they were numeric ids.
+gem 'friendly_id', '~> 5.2', '>= 5.2.4'
+# Manage Procfile-based applications
+gem 'foreman', '~> 0.84.0'
+# Sidekiq uses threads to handle many jobs at the same time in the same process. It does not require Rails but will integrate tightly with Rails to make background processing dead simple.
+gem 'sidekiq', '~> 5.1', '>= 5.1.3'
+# Tailwind CSS is a utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+gem 'tailwindcss', '~> 0.2.0'
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -55,6 +64,11 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  # The listen gem listens to file modifications and notifies you about the changes.
+  gem 'listen', '>= 3.0.5', '< 3.2'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :test do

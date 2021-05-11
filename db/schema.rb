@@ -10,14 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_07_184715) do
+ActiveRecord::Schema.define(version: 2021_05_10_134534) do
 
   create_table "meetings", force: :cascade do |t|
     t.datetime "start_date"
     t.datetime "end_date"
-    t.string "description"
+    t.text "description"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_meetings_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -5,12 +5,14 @@ class Site::MeetingController < ApplicationController
 
   def data
     meetings = Meeting.all
+    @meetings.user = current_user
  
     render :json => meetings.map {|meeting| {
                :id => meeting.id,
                :start_date => meeting.start_date.to_formatted_s(:db),
                :end_date => meeting.end_date.to_formatted_s(:db),
-               :text => meeting.description
+               :text => meeting.description,
+               :user => meeting.user
            }}
   end
 
@@ -20,10 +22,12 @@ class Site::MeetingController < ApplicationController
     start_date = params["start_date"]
     end_date = params["end_date"]
     description = params["text"]
+    user = params["user"]
  
     case mode
       when "inserted"
-        meeting = Meeting.create :start_date => start_date, :end_date => end_date, :description => description
+        meeting = Meeting.create :start_date => start_date, :end_date => end_date, 
+                                :description => description, :user => user
         tid = meeting.id
  
       when "deleted"
@@ -35,6 +39,7 @@ class Site::MeetingController < ApplicationController
         meeting.start_date = start_date
         meeting.end_date = end_date
         meeting.description = description
+        meeting.user = user
         meeting.save
         tid = id
     end
