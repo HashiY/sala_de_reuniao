@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_12_055808) do
+ActiveRecord::Schema.define(version: 2021_05_13_042534) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
@@ -24,9 +24,9 @@ ActiveRecord::Schema.define(version: 2021_05_12_055808) do
   end
 
   create_table "meetings", force: :cascade do |t|
+    t.string "name"
     t.datetime "start_date"
     t.datetime "end_date"
-    t.text "description"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

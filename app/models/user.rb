@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   
-  has_many :meetings
+  has_many :meetings, dependent: :destroy
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable

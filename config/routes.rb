@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
+  resources :meetings
   namespace :site do
-    get 'meeting/index'
+    get 'meetings/index'
   end
 
-  root :to => 'site/meeting#index'
-
-  match "site/meeting/data", :to => "site/meeting#data", :as => "data", :via => "get"
-  match "site/meeting/db_action", :to => "site/meeting#db_action", :as => "db_action", :via => "get"
+  root to: 'meetings#index'
 
 
   devise_for :users, controllers: {

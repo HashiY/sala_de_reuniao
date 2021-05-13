@@ -27,7 +27,7 @@ gem 'i18n-js'
 # acha erros rails na forma mais legivel
 gem 'better_errors'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
+gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 #Webpacker makes it easy to use the JavaScript pre-processor and bundler webpack 5.x.x+ to manage application-like JavaScript in Rails
@@ -51,6 +51,16 @@ gem 'foreman', '~> 0.84.0'
 gem 'sidekiq', '~> 5.1', '>= 5.1.3'
 # Tailwind CSS is a utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
 gem 'tailwindcss', '~> 0.2.0'
+
+# Simple Calendar is designed to do one thing really really well: render a calendar.
+gem "simple_calendar", "~> 2.4"
+# Want to include Basecamp's awesome Trix WYSIWYG editor in your Ruby on Rails application? You've come to the right place!
+gem 'trix'
+# The Stripe Ruby library provides convenient access to the Stripe API from applications written in the Ruby language
+gem 'stripe'
+
+
+
 
 
 # Reduces boot times through caching; required in config/boot.rb
