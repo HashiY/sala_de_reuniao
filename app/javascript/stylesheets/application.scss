@@ -8,18 +8,19 @@
  * If using `postcss-import`, use this import instead:
  *
  * @import "tailwindcss/preflight";
+ * @tailwind preflight;
  */
- @tailwind preflight;
-
+ @import "tailwindcss/preflight";
  /**
   * This injects any component classes registered by plugins.
   *
   * If using `postcss-import`, use this import instead:
   *
   * @import "tailwindcss/components";
-  */
- @tailwind components;
  
+  * @tailwind components;
+  */
+  @import "tailwindcss/components";
  /**
   * Here you would add any of your custom component classes; stuff that you'd
   * want loaded *before* the utilities so that the utilities could still
@@ -38,6 +39,7 @@
  
  @import "components/buttons";
  @import "components/forms";
+ @import "components/tabs";
  
  /**
   * This injects all of Tailwind's utility classes, generated based on your
@@ -46,9 +48,9 @@
   * If using `postcss-import`, use this import instead:
   *
   * @import "tailwindcss/utilities";
+  *@tailwind utilities;
   */
- @tailwind utilities;
- 
+ @import "tailwindcss/utilities";
  /**
   * Here you would add any custom utilities you need that don't come out of the
   * box with Tailwind.

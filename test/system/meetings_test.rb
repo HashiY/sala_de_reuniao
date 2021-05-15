@@ -14,9 +14,9 @@ class MeetingsTest < ApplicationSystemTestCase
     visit meetings_url
     click_on "New Meeting"
 
-    fill_in "End date", with: @meeting.end_date
+    fill_in "End time", with: @meeting.end_time
     fill_in "Name", with: @meeting.name
-    fill_in "Start date", with: @meeting.start_date
+    fill_in "Start time", with: @meeting.start_time
     fill_in "User", with: @meeting.user_id
     click_on "Create Meeting"
 
@@ -28,9 +28,9 @@ class MeetingsTest < ApplicationSystemTestCase
     visit meetings_url
     click_on "Edit", match: :first
 
-    fill_in "End date", with: @meeting.end_date
+    fill_in "End time", with: @meeting.end_time
     fill_in "Name", with: @meeting.name
-    fill_in "Start date", with: @meeting.start_date
+    fill_in "Start time", with: @meeting.start_time
     fill_in "User", with: @meeting.user_id
     click_on "Update Meeting"
 

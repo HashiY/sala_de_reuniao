@@ -34,3 +34,24 @@ O Webpacker facilita o uso do pré-processador JavaScript e do bundler webpack 5
 Vue
 O Vue, assim como o Angular, é um framework voltado para manipulação do front-end com um código bem enxuto. Ele utiliza o conceito de two-way data binding, onde ocorre o seguinte: existe uma View e um model JS e tudo o que acontece no model, é refletido a View e tudo que ocorre na View é refletido no model.
 Este mapeamento Model-View é feito por meio de atributos que adicionamos nas tags html mapeado um objeto que criamos no arquivo JS.
+
+------------------------------
+
+Deleta package-lock.json
+
+npm update
+
+npm install
+
+npm install tailwindcss
+
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+
+npm i -D postcss-load-config
+
+-----------------------------------------
+
+git status
+git add .
+git commit -m ""
+git push

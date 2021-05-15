@@ -23,6 +23,9 @@
                     </li>
                 <% else %>
                     <li>
+                        <%= link_to "Dashboard", meetings_path, class: "btn btn-default mr-2" %>
+                    </li>
+                    <li>
                         <%= link_to current_user.email, "#" %>
                     </li>
                     <li>

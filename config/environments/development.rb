@@ -1,6 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  # Verifies that versions and hashed value of the package contents in the project's package.json
+  config.webpacker.check_yarn_integrity = true
   # Devise Config
   config.action_mailer.default_url_options = {host: 'localhost', port: 3000}
 
@@ -55,6 +56,8 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  config.sass.preferred_syntax = :sass
+  config.sass.syntax = :sass
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
