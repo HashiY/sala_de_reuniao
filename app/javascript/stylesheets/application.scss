@@ -1,3 +1,8 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -9,8 +14,10 @@
  *
  * @import "tailwindcss/preflight";
  * @tailwind preflight;
- */
- @import "tailwindcss/preflight";
+
+ * @import "tailwindcss/base";
+  */
+ @tailwind base;
  /**
   * This injects any component classes registered by plugins.
   *
@@ -20,7 +27,7 @@
  
   * @tailwind components;
   */
-  @import "tailwindcss/components";
+  @tailwind components;
  /**
   * Here you would add any of your custom component classes; stuff that you'd
   * want loaded *before* the utilities so that the utilities could still
@@ -37,9 +44,103 @@
   * @import "components/forms";
   */
  
- @import "components/buttons";
- @import "components/forms";
- @import "components/tabs";
+/* Buttons */
+
+.btn {
+    @apply font-semibold text-sm py-2 px-3 rounded cursor-pointer no-underline;
+    transition: 0.2s ease all;
+  }
+  
+  .btn-default {
+    box-shadow: 0 1px 2px rgba(#444444, 0.1);
+    @apply bg-white border border-gray-400 text-gray-100;
+  
+    &:hover, &:focus {
+      @apply bg-gray-400 shadow-none;
+    }
+  }
+  
+  .btn-primary {
+    @apply bg-indigo-400 text-indigo-700 shadow;
+  
+    &:hover, &:focus {
+      @apply bg-indigo-900 text-indigo-100;
+    }
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-400 shadow;
+  
+    &:hover, &:focus {
+      @apply bg-gray-100 text-gray-600;
+    }
+  }
+  
+  .btn-destroy {
+    @apply bg-white border border-red-400 text-red-400;
+  
+    &:hover, &:focus {
+      @apply bg-red-400 text-white;
+    }
+  }
+  
+  .link {
+    @apply no-underline text-indigo-400;
+  
+    &:hover, &:focus {
+      @apply text-indigo-100;
+    }
+  }
+
+/* Forms */
+.input {
+  @apply appearance-none block w-full bg-gray-400 text-gray-100 border border-gray-400 rounded py-3 px-4 leading-tight;
+}
+
+.input:focus {
+  @apply outline-none bg-white border-gray-700;
+}
+
+.label {
+  @apply block text-gray-100 text-sm font-semibold mb-2;
+}
+
+.select {
+  @apply appearance-none py-3 px-4 pr-8 block w-full bg-gray-400 border border-gray-400 text-gray-100
+   rounded leading-tight;
+   -webkit-appearance: none;
+}
+
+.select:focus {
+  @apply outline-none bg-white border-gray-700;
+}
+
+/* Tabs */
+#nav-tab .active a {
+    @apply bg-indigo-800 text-white;
+  }
+  
+  .tab {
+     @apply p-5 no-underline inline-block text-indigo-800;
+     transition: ease 0.2s all;
+     margin-bottom: -1px;
+  
+     &:hover {
+      @apply bg-indigo-100 text-white;
+     }
+  
+     &:active {
+        @apply text-white;
+     }
+  }
+  
+  .tab-panel {
+    display: none;
+  }
+  
+  .tab-panel.active {
+    display: block;
+  }
  
  /**
   * This injects all of Tailwind's utility classes, generated based on your
@@ -50,7 +151,7 @@
   * @import "tailwindcss/utilities";
   *@tailwind utilities;
   */
- @import "tailwindcss/utilities";
+  @tailwind utilities;
  /**
   * Here you would add any custom utilities you need that don't come out of the
   * box with Tailwind.

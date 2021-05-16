@@ -4,6 +4,7 @@
   "dependencies": {
     "@rails/webpacker": "5.3.0",
     "bootstrap": "^4.6.0",
+    "postcss-import": "^14.0.2",
     "vue": "^2.6.12",
     "vue-cal": "^3.10.1",
     "vue-loader": "^15.9.7",

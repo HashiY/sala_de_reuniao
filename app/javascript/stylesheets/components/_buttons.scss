@@ -7,41 +7,41 @@
 
 .btn-default {
   box-shadow: 0 1px 2px rgba(#444444, 0.1);
-  @apply bg-white border border-grey-light text-grey-darker;
+  @apply bg-white border border-gray-400 text-gray-100;
 
   &:hover, &:focus {
-    @apply bg-grey-lightest shadow-none;
+    @apply bg-gray-400 shadow-none;
   }
 }
 
 .btn-primary {
-  @apply bg-indigo-light text-indigo-lightest shadow;
+  @apply bg-indigo-400 text-indigo-700 shadow;
 
   &:hover, &:focus {
-    @apply bg-indigo-lighter text-indigo-dark;
+    @apply bg-indigo-900 text-indigo-100;
   }
 }
 
 .btn-secondary {
-  @apply bg-grey-darker text-grey-lighter shadow;
+  @apply bg-gray-100 text-gray-400 shadow;
 
   &:hover, &:focus {
-    @apply bg-grey-darkest text-grey-light;
+    @apply bg-gray-100 text-gray-600;
   }
 }
 
 .btn-destroy {
-  @apply bg-white border border-red text-red;
+  @apply bg-white border border-red-400 text-red-400;
 
   &:hover, &:focus {
-    @apply bg-red text-white;
+    @apply bg-red-400 text-white;
   }
 }
 
 .link {
-  @apply no-underline text-indigo;
+  @apply no-underline text-indigo-400;
 
   &:hover, &:focus {
-    @apply text-indigo-dark;
+    @apply text-indigo-100;
   }
 }
