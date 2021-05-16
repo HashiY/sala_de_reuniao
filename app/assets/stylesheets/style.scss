@@ -1,4 +1,20 @@
 /*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*
  ! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com
  */
 
@@ -577,7 +593,7 @@ video {
   border-color: rgba(156, 163, 175, var(--tw-border-opacity));
   border-width: 1px;
   --tw-text-opacity: 1;
-  color: rgba(243, 244, 246, var(--tw-text-opacity));
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
   &:hover, &:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
@@ -597,22 +613,22 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgba(49, 46, 129, var(--tw-bg-opacity));
     --tw-text-opacity: 1;
-    color: rgba(224, 231, 255, var(--tw-text-opacity));
+    color: rgba(165, 180, 252, var(--tw-text-opacity));
   }
 }
 
 .btn-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   --tw-text-opacity: 1;
-  color: rgba(156, 163, 175, var(--tw-text-opacity));
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
   &:hover, &:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
     --tw-text-opacity: 1;
-    color: rgba(75, 85, 99, var(--tw-text-opacity));
+    color: rgba(17, 24, 39, var(--tw-text-opacity));
   }
 }
 
@@ -638,7 +654,7 @@ video {
   text-decoration: none;
   &:hover, &:focus {
     --tw-text-opacity: 1;
-    color: rgba(224, 231, 255, var(--tw-text-opacity));
+    color: rgba(199, 210, 254, var(--tw-text-opacity));
   }
 }
 
@@ -661,7 +677,7 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
   --tw-text-opacity: 1;
-  color: rgba(243, 244, 246, var(--tw-text-opacity));
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
   width: 100%;
 }
 
@@ -681,7 +697,7 @@ video {
   line-height: 1.25rem;
   margin-bottom: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgba(243, 244, 246, var(--tw-text-opacity));
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
 }
 
 .select {
@@ -701,7 +717,7 @@ video {
   padding-right: 1rem;
   padding-right: 2rem;
   --tw-text-opacity: 1;
-  color: rgba(243, 244, 246, var(--tw-text-opacity));
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
   width: 100%;
   -webkit-appearance: none;
 }
@@ -734,7 +750,7 @@ video {
   margin-bottom: -1px;
   &:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(224, 231, 255, var(--tw-bg-opacity));
+    background-color: rgba(67, 56, 202, var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
