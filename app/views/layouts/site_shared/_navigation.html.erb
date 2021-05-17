@@ -23,10 +23,10 @@
                     </li>
                 <% else %>
                     <li>
-                        <%= link_to "Dashboard", meetings_path, class: "btn btn-default mr-2" %>
+                        <%= link_to "Dashboard", meetings_path %>
                     </li>
                     <li>
-                        <%= link_to current_user.email, "#" %>
+                        <%= link_to "Schedule new session", new_meeting_path %>
                     </li>
                     <li>
                         <%= link_to current_user.name, "#" %>

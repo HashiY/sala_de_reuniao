@@ -1,5 +1,5 @@
-<div class="max-w-lg my-10 m-auto">
-  <div class="p-10 bg-white border border-gray-600 rounded">
+<div class="max-w-lg my-12s m-auto">
+  <div class="p-4 bg-white border border-gray-600 rounded">
 
     <div class="flex flex-wrap justify-between items-center mb-5">
       <h1><%= @meeting.name %></h1>
@@ -24,11 +24,11 @@
         <p class="text-sm text-gray-900"><%= link_to "Login", new_user_session_path, class: "link" %> ou <%= link_to "Sign up", new_user_regsitration_path, class: "link" %> comentar.</p>
       </div>
     <% else %>
-        <%#= render 'comments/form' %>
+        <%= render 'comments/form' %>
     <% end %>
 
     <div id="comments">
-      <%#= render @meeting.comments %>
+      <%= render @meeting.comments %>
     </div>
   </div>
 </div>

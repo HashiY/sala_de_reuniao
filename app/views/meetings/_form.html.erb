@@ -12,7 +12,7 @@
       </div>
     <% end %>
 
-    <h3 class="mb-4">Informação da Reunião</h3>
+    <h3 class="mb-4 text-center"><b>Informação da Reunião</b></h3>
 
     <div class="mb-6">
       <%= form.label :name, class: "label" %>
@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div class="field">
+    <div class="mb-6">
       <%= form.label :end_time, class: "label" %>
       <div class="flex items-center justify-between max-w-md">
         <%= form.datetime_select :end_time, { start_day: Date.today, start_year: Date.today.year, minute_step: 15 }, { class: "select py-2 px-2 mr-2" } %>
@@ -34,8 +34,6 @@
     </div>
 
     <hr class="border" />
-
-    <%= render "payment_form" %>
 
     <%= form.submit class: "btn btn-primary text-base py-3 px-5" %>
     
